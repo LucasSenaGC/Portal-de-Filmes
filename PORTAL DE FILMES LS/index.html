@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Portal de Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body">
+    
+    <header class="container-fluid header">
+
+        <div class="row header_area">
+
+                <div class="col-1">
+                    <img src="imagens/logo.png" class="logo">
+                </div>
+                
+                
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 area_menu">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Lançamentos</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Em Destaque</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Avaliações</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Entrevistas & Making of</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Novidades</a>
+                    </nav>
+                   
+                </div>
+
+                
+ 
+                <div class="col-3 caixa">
+                    <div id="divBusca">
+                        <input type="text" id="txtBusca" placeholder="Pesquisar filme" />
+                    </div>
+
+                </div>
+        </div>
+    
+        
+    </header>
+
+    <main class="container main">
+                <!--carousel e descrição-->
+        <section class="row tituloelancamentos">
+            <h1 class="col-12 titulo">Lançamentos</h1>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 video">
+              
+            <div id="carouselExampleIndicators" class="carousel slide" data-interval="29600">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qy9hiWlk8yk" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="d-block w-100"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tvAa9TpPE1w" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="d-block w-100"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZDLhcls5d0" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="d-block w-100"></iframe>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+                
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 texto">
+                <h2>Final Fantasy 7: Advent Children Complete 4K Remastered(2021)</h2>
+                <b>Sinopse:</b>Lançado originalmente em 2005, Advent Children é a continuação da história de Final Fantasy VII. O enredo se passa dois
+                anos após a batalha final do jogo de PlayStation 1 e traz o protagonista Cloud Strife em uma jornada para ajudar
+                crianças que foram infectadas por uma doença desconhecida. <br> 
+                <p><b>Diretor:</b>Testuya Nomura  <b>Roteiro:</b>Kazushige Nojima <b>Estreia:</b>2021</p>
+                <b>Elenco:</b>Cloud Strife, Zack Fair, Tifa Lockhart , Aerith Gainsborough, Sephiroth <br>
+                <br>
+                <b>Avaliação:</b><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </section>
+        
+        <!--titulo DESTAQUE-->
+        
+        <section class="row tdestaques">
+            <div class="col-12 titulodestaque">
+                <h1 class="dest">
+                    Em destaque
+                    <button class="btn btn-secondary btn-sm dropdown-toggle barra_categoria" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Categorias:Todas
+                    </button>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Filmes de animes</a>
+                        <a class="dropdown-item" href="#">Ficção científica</a>
+                    </div>
+                    </div>
+                    </div>
+                </h1>
+        </section>
+        <!--IMAGENS EM DESTAQUE-->
+        <section class="row imgdestaques">        
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <img src="imagens/destaque1.jpg">
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <img src="imagens/destaque2.jpg">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <img src="imagens/destaque3.jpg">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                <img src="imagens/destaque4.jpg">
+            </div>
+            <button type="button" class="btn btn-secondary maisfilmes">+ Carregar mais filmes</button>
+        </section>
+
+        <!--TITULO Ultimas Avaliações-->
+        <section class="row ultavaliacoes">
+            <div class="col-12 tituloult">
+                <h1>Ultimas Avaliações</h1>
+            </div>
+        </section>
+
+        <!--CARDS DE AVALIAÇÕES-->
+        <section class="row cards_ult">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 card1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-circle"></i>  José Criticador </h5>
+                    <p class="card-text">O Filme não foi capaz de me divertir por um segundo
+                        .O roteiro é ruim, a direção nem se fala, perdi 1h da minha vida =(
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> <b>25/04/2021</b>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 card2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-circle"></i>  Aline Movie Expert </h5>
+                    <p class="card-text">Apesar de algumas falhas o filme apresenta um bom roteiro, uma otima direção
+                        ,pecando apenas em alguns poucos detalhes artisticos.</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span> <b>25/04/2021</b>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 card3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-circle"></i>  Raquel Javiesse</h5>
+                    <p class="card-text">Melhor filme que ja vi, sem defeitos!!!, depois que eu acabei
+                        vi mais umas 3 vezes e ja estou indo pra quarta, recomendo a todos.</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span> <b>25/04/2021</b>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary maisavaliacoes">+ Carregar mais avaliações</button>
+
+        </section>
+            
+
+        
+        <!--ENTREVISTAS E MAKING OF-->
+        <section class="row entrevistas">
+            <div class="col-12 Entrevistastitulo">
+                <h1>Entrevistas & Making of</h1>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 entrevista1">
+                <iframe width="560" height="250" src="https://www.youtube.com/embed/DmVVHPec1Pg" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="d-block w-100"></iframe>
+                <div class="card-body">
+                    <h3 class="card-title"><b>Filme:</b> John Wick 3</h3>
+                    <p class="card-text"><b>Diretor:</b>Chad Stahelski</p>
+                    <b>Roteiro: </b>Derek Kolstad  <b>Estreia: </b> 17/05/2019
+                </div>
+            </div>
+            
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 entrevista2">
+                <iframe width="560" height="250" src="https://www.youtube.com/embed/nZrBbXir_Og" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="d-block w-100"></iframe>
+                <div class="card-body">
+                    <h3 class="card-title"><b>Filme:</b> Guardiões da Galáxia </h3>
+                    <p class="card-text"><b>Diretor:</b>James Gunn</p>
+                    <b>Roteiro: </b>Nicole Perlman <b>Estreia: </b> 31/07/2014
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 entrevista3">
+                <iframe width="560" height="250" src="https://www.youtube.com/embed/e1O7DLuG5P4" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="d-block w-100"></iframe>
+                <div class="card-body">
+                    <h3 class="card-title"><b>Filme:</b> O Auto Da Compadecida</h3>
+                    <p class="card-text"><b>Diretor:</b>Guel Arraes</p>
+                    <b>Roteiro: </b>Adriana Falcão <b>Estreia: </b> 17/09/2000
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-secondary maisavaliacoes">+ Carregar mais entrevistas</button>
+            
+
+        </section>
+        <!--NOVIDADES E INFOS-->
+        <section class="row novidadesinfos">
+            <!--NOVIDADES-->
+            
+                <h1 class="col-12 Novidades">Novidades</h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 cardnovidades">
+            
+                    
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img src="imagens/novidade1.jpg" class="Cardimagecap1">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Kimetsu no Yaiba Mugen Train é um sucesso no Japão</h4>
+                                <p class="card-text">Demon Slayer - Kimetsu no Yaiba - The Movie: Mugen Train ultrapassou Titanic nas
+                                    bilheterias japonesas esta semana e se
+                                    tornou o 2º maior filme da história do país [via Variety]. Com US$ 264 milhões arrecadados em um mês
+                                    e meio, o filme
+                                    superou a quantia de US$ 251 milhões do longa de James Cameron, que em 1997 se tornou o maior
+                                    sucesso do Japão.</p>
+                                <b>fonte:</b><a
+                                    href=" https://www.omelete.com.br/filmes/demon-slayer-filme-bilheteria-japao">Omelete</a> <button
+                                    type="button" class="btn btn-secondary btn-sm">Filme japonês</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Filmes de sucesso</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    
+                    
+                    
+                
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img src="imagens/novidade2.jpg" class="Cardimagecap2">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Final Fantasy VII Advent Children Complete tem versão 4K confirmada para 2021
+                                </h4>
+                                <p class="card-text">O filme Final Fantasy VII: Advent Children vai receber uma edição remasterizada em
+                                    resolução 4K com suporte a HDR ainda
+                                    este ano. O longa-metragem chega em 8 de junho, dois dias antes do lançamento de FF7 Remake
+                                    Intergrade, a versão do jogo
+                                    com melhorias de desempenho no PS5. A Sony Pictures ainda não informou se a animação estará
+                                    disponível em serviços de
+                                    streaming.</p>
+                                <b>fonte:</b><a
+                                    href="https://tecnoblog.net/430776/final-fantasy-vii-advent-children-tera-versao-em-4k-e-hdr-em-junho/">Tecnoblog</a>
+                                <button type="button" class="btn btn-secondary btn-sm">Filmes de jogos</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Lançamentos</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img src="imagens/novidade3.jpg" class="Cardimagecap3">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Soul recebe Oscar de melhor animação</h4>
+                                <p class="card-text">Ao receber o Oscar um dos diretores Pete Docter diz:"Não tínhamos nem ideia do que
+                                    o jazz podia nos ensinar sobre a vida. Assim como um músico de jazz, podemos transformar
+                                    qualquer coisa que aconteça em algo de valor e algo de beleza"</p>
+                                <b>fonte:</b><a
+                                    href="https://g1.globo.com/pop-arte/cinema/oscar/2021/noticia/2021/04/26/soul-volta-a-dar-a-pixar-um-oscar-de-melhor-filme-de-animacao.ghtml">G1
+                                    Globo</a>
+                                <button type="button" class="btn btn-secondary btn-sm">Filmes de Animação</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Oscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                </div>
+            <!--Sobre/editorial/rede social-->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 sobre">
+                    <h1 class="sobre">Sobre</h1>
+                    <p>Trabalho Prático da Materia Desenvolvimento De Interface Web, no qual tem sua finalidade 
+                        a produção de um portal de filmes.Este conteudo deve seguir as orientações do wireframe, realizando incrementos ou alterações que melhoraram a estrutura de componentes do
+                        portal.
+                    </p>
+                    <h1 class="editorial">Editorial</h1>
+                    <br>
+                    <i class="fas fa-user-circle tamanho"></i><b>Redaçâo:</b>Aris <br> <br> <i class="fas fa-user-circle tamanho"></i><b>Pesquisa:</b> José Google
+                    <br>  <br>  <i class="fas fa-user-circle tamanho"></i><b>Gerente Geral:</b>Lucas Sena
+                    <h1 class="redesocial">Redes Sociais:</h1>
+                    <br>
+                    <img src="imagens/facebook.png" class="facebook"> 
+                    <img src="imagens/twitter.png" class="twitter"> 
+                    <img src="imagens/instagram.png" class="instagram">
+
+
+                </div>
+            
+
+
+        </section>
+
+    </main>
+    <!--FOOTER-->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-10 footer_area">
+                Copyright 2021- Disciplina de Desenvolvimento de Interface Web-<strong> ICEI PUC Minas</strong> 
+            </div>
+            
+            <div>
+                <img src="imagens/logo.png" class="logo">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</div>
+
+
+
+<script src="https://kit.fontawesome.com/5234c93ec4.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+</body>
+</html>

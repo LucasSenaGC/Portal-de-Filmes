@@ -1,0 +1,198 @@
+.header{
+    background: rgb(122, 121, 121);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.area_menu{
+    margin-top: 10px;
+    
+}
+
+#menuToggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+}
+
+.area_menu nav a{
+    background-color: rgb(41, 41, 41);
+    color: beige;  
+}
+
+.area_menu nav a:hover{
+    background-color: rgb(54, 54, 54); 
+}
+
+.logo{  
+    width: 60px;   
+   
+}
+/*CAIXA DE PESQUISA*/
+.caixa{
+    margin-top: 15px;
+}
+#txtBusca{
+    background-color:  rgb(179, 179, 179);
+}
+
+/*TITULO LANÇAMENTO*/
+.titulo{
+    padding: 5px;
+    
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 35px;
+}
+/* DESCRIÇAO DO FILME AO LADO DO CAROUSEL */
+
+.tituloelancamentos{
+    background-color: rgb(216, 209, 209);
+    
+}
+.video{
+    padding: 24px;
+}
+.texto{
+    padding-bottom: 50px;
+}
+.texto p{
+    margin-top: 15px;
+}
+
+
+/*TITULO DESTAQUE*/
+.titulodestaque h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.destaque{
+    width: 100%;
+}
+
+
+/* BARRA DE CATEGORIA NA AREA DE DESTAQUE*/
+.barra_categoria{
+    margin-left: 61%;
+}
+/* 4 IMAGENS DE FILMES NA AREA DESTAQUE */
+.imgdestaques div{
+    margin-bottom: 20px;
+}
+
+.imgdestaques img{
+    width: 80%;
+    margin-top: 15px;
+}
+/*BOTÃO DE CARREGAR MAIS FILMES */
+.maisfilmes{
+    margin-left: 78%;
+    margin-top: 25px;
+}
+/* CONFIG ESTRELAS/CARD*/
+.tituloult{
+    margin-bottom: 40px;
+}
+.cards_ult b{
+    margin-left: 5px;
+}
+
+.checked {
+  color: orange;
+}
+
+.maisavaliacoes{
+    margin-left: 76%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*ENTREVISTAS E MAKING OF*/
+.Entrevistastitulo{
+    margin-bottom: 40px;
+}
+.entrevistas{
+    background-color: rgb(216, 209, 209);
+}
+/*Novidades/Sobre/editorial/rede social*/
+.Novidades{
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+.card-horizontal{
+    display: flex;
+    flex: 1 1 auto;
+
+}
+
+
+.tamanho{
+    width: 30px;
+}
+.redesocial{
+    margin-top: 30px;
+}
+
+.twitter{
+    width: 10%;
+}
+
+
+
+/* CONFIG FOOTER */
+.footer{
+    margin-top: 20px;
+    background: rgb(122, 121, 121);
+    color: white;
+    text-align: center;
+    
+}
+
+.footer_area{
+    margin-top: 22px;
+}
+
+.footer img{
+    margin-left: 100px;
+}
+
+/* Media Queries */
+@media screen and (max-width:600px){
+#divBusca{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.maisfilmes{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.maisavaliacoes{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.img-square-wrapper{
+    display: none;
+}
+}
+
+@media screen and (min-width:601px) and (max-width:980px){
+.main{
+    font-size: 150%;
+}
+.imgdestaques{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1000px) {
+.main{
+    font-size: 160%;
+}
+
+}
